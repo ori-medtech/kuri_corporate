@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corporate</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="content-wrapper header-nav">
+      <h1>xx株式会社</h1>
+      <nav>
+        <ul>
+          <li><a href="#">トップページ</a></li>
+          <li><a href="#">会社概要</a></li>
+          <li><a href="#">事業内容</a></li>
+          <li><a href="#">採用情報</a></li>
+          <li><a href="#">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="mainvisual">
+    <img src="img/seisaku.jpg" alt="製作の様子">
+    <h2>ものづくりが好き</h2>
+    <div class="bg1"></div>
+  </section>
+
+  <main>
+    <section class="greeting">
+      <div class="content-wrapper">
+        <div class="contents">
+          <figure><img src="img/kouba.jpg" alt="工場の様子"></figure>
+          <div class="content">
+            <h2>ものづくりとは</h2>
+            <p>
+              本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。<br>
+              本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。<br>
+              本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。<br>
+              本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work">
+      <div class="content-wrapper">
+        <h2>事業内容</h2>
+        <ul>
+          <li><a href="#">
+            <figure><img src="https://placehold.jp/400x400.png" ></figure>
+            <p>本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。</p></a>
+          </li>
+          <li><a href="#">
+            <figure><img src="https://placehold.jp/400x400.png" ></figure>
+            <p>本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。</p></a>
+          </li>
+          <li><a href="#">
+            <figure><img src="https://placehold.jp/400x400.png" ></figure>
+            <p>本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。</p></a>
+          </li>         
+        </ul>
+      </div>
+    </section>
+
+    <section class="news">
+      <div class="content-wrapper">
+        <h2>NEWS</h2>
+        <ul>
+          <li><a href="#">
+            <time>2020-00-00</time>
+            本文が入ります。本文が入ります。本文が入ります。
+          </a></li>
+          <li><a href="#">
+            <time>2020-00-00</time>
+            本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+          </a></li>
+          <li><a href="#">
+            <time>2020-00-00</time>
+            本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+          </a></li>
+          <li><a href="#">
+            <time>2020-00-00</time>
+            本文が入ります。本文が入ります。本文が入ります。
+          </a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="recruit">
+      <div class="content-wrapper">
+        <div class="recruit-img"><img src="img/shakehands.jpg" alt="採用情報"></div>
+        <h2><a href="#">採用情報</a></h2>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="content-wrapper">
+      <div class="footer-contents">
+        <table>
+          <tr><th><h3>XX株式会社</h3></th></tr>
+          <tr><td>〒000-0000</td></tr>
+          <tr><td>東京都××××××××××</td></tr>
+          <tr><td>TEL:01-2345-6789</td></tr>
+          <tr><td>FAX:01-2345-6789</td></tr>
+        </table>
+        <ul>
+          <li><a href="#">トップページ</a></li>
+          <li><a href="#">会社概要</a></li>
+          <li><a href="#">事業内容</a></li>
+          <li><a href="#">採用情報</a></li>
+          <li><a href="#">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <p>&copy;  XXCo., Ltd. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <div id="page_top"><a href="#">TOP</a></div>
+  <script>
+    $(function() {
+      const pagetop = $('#page_top');
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+          pagetop.fadeIn();
+        } else {
+          pagetop.fadeOut();
+        }
+      });
+      pagetop.click(function() {
+        $('body, html').animate({ scrollTop: 0 }, 500);
+        return false;
+      });
+    });
+    </script>
+</body>
+</html>
