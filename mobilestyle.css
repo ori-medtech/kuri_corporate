@@ -1,0 +1,112 @@
+/* middle screen */
+@media screen and (max-width: 1024px) {
+  section {
+    margin-bottom: 60px;
+  }
+  .header-nav {
+    flex-direction: column;
+  }
+
+  header nav ul {
+    gap: 20px;
+  }
+
+  .bg1 {
+    top: -10px;
+    height: 600px;
+  }
+
+  .greeting .contents {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .greeting .contents figure {
+    width: 100%;
+  }
+
+  .greeting .content {
+    width: 100%;
+    margin-right: 0;
+  }
+  
+  .work ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .work ul li {
+    display: flex;
+    width: 100%;
+    gap: 60px;
+  }
+
+  .footer-contents {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+}
+
+/* small screen */
+@media screen and (max-width: 600px) {
+  .header-nav {
+    flex-direction: row;
+  }
+
+  header nav ul {
+    display: none;
+  } 
+
+  header .hamburger-menu {
+    display: block;
+  }
+
+  .mainvisual {
+    height: 300px;
+  }
+
+  .mainvisual img {
+    width: 100%;
+    margin-left: 0;
+    height: 300px;
+  }
+
+  .mainvisual h2 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+  }
+
+  .bg1 {
+    display: none;
+  }
+
+  .work ul li {
+    display: block;
+  }
+
+  .news li {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    padding-bottom: 10px; 
+  }
+
+  .recruit-img img {
+    width: 100%;
+    height: 300px;
+    margin-right: 0;
+  }
+
+  .recruit h2 a {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+  }
+
+
+}
