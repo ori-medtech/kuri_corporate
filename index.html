@@ -11,9 +11,9 @@
 </head>
 <body>
   <header>
-    <div class="content-wrapper header-nav">
-      <h1>xx株式会社</h1>
-      <nav>
+    <div class="content-wrapper header-nav fixed">
+      <h1>XX株式会社</h1>
+      <nav id="global-nav">
         <ul>
           <li><a href="#">トップページ</a></li>
           <li><a href="#">会社概要</a></li>
@@ -60,15 +60,24 @@
         <ul>
           <li>
             <figure><img src="https://placehold.jp/400x400.png" ></figure>
-            <p>本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。</p>
+            <div class="work-text">
+              <h3>タイトル</h3>
+              <p>本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。</p>
+            </div>
           </li>
           <li>
             <figure><img src="https://placehold.jp/400x400.png" ></figure>
-            <p>本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。</p>
+            <div class="work-text">
+              <h3>タイトル</h3>
+              <p>本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。</p>
+            </div>
           </li>
           <li>
             <figure><img src="https://placehold.jp/400x400.png" ></figure>
-            <p>本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。</p>
+            <div class="work-text">
+              <h3>タイトル</h3>
+              <p>本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。</p>
+            </div>
           </li>         
         </ul>
       </div>
@@ -99,7 +108,10 @@
     </section>
 
     <section class="recruit">
-      <div class="recruit-img"><img src="img/shakehands.jpg" alt="採用情報"></div>
+      <div class="recruit-img">
+        <img src="img/shakehands.jpg" alt="採用情報">
+        <div class="cover"></div>
+      </div>
       <div class="content-wrapper">
         <h2><a href="#">採用情報</a></h2>
       </div>
@@ -125,10 +137,10 @@
           <li><a href="#">お問い合わせ</a></li>
         </ul>
       </div>
+    </div>
       <div class="copyright">
         <p>&copy;  XXCo., Ltd. All Rights Reserved.</p>
       </div>
-    </div>
   </footer>
   <div id="page_top"><a href="#">TOP</a></div>
   <script>
@@ -141,9 +153,15 @@
           pagetop.fadeOut();
         }
       });
+
       pagetop.click(function() {
         $('body, html').animate({ scrollTop: 0 }, 500);
         return false;
+      });
+
+      $('.hamburger-menu').on('click', ()=> {
+      $("#global-nav").slideToggle();
+      // $("#global-nav").fadeToggle();     
       });
     });
     </script>
